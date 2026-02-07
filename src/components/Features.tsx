@@ -2,7 +2,7 @@ const features = [
   {
     emoji: '🎯',
     title: 'Smart Extraction',
-    description: 'Automatically finds homework, events, deadlines — ignores "good morning" spam.',
+    description: 'Automatically finds homework, events, deadlines — filters out the noise.',
   },
   {
     emoji: '📅',

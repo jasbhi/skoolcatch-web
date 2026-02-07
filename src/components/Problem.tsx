@@ -6,8 +6,8 @@ const painPoints = [
   },
   {
     emoji: '🔍',
-    title: 'Important updates buried in "good morning"',
-    description: 'That homework reminder? Lost in 47 forwards.',
+    title: 'Important updates scattered everywhere',
+    description: 'That homework reminder? Buried under 20 other messages.',
   },
   {
     emoji: '😰',
@@ -52,32 +52,32 @@ export default function Problem() {
                   {/* Messages */}
                   <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">6:02 AM</p>
-                    <p>Good morning everyone! 🌸</p>
+                    <p>📢 Reminder: Fee payment last date 15th Feb</p>
                   </div>
                   
                   <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">6:15 AM</p>
-                    <p>🙏 Good morning 🙏</p>
+                    <p>📎 Annual Day circular attached</p>
                   </div>
                   
                   <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">6:28 AM</p>
-                    <p>🌅 Have a blessed day!</p>
+                    <p>Holiday on Monday for Republic Day</p>
                   </div>
                   
-                  <div className="bg-[#dcf8c6] rounded-lg p-2 text-xs max-w-[85%] ml-auto">
+                  <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">6:45 AM</p>
                     <p className="font-medium">⚠️ Tomorrow bring chart paper and color pencils for project</p>
                   </div>
                   
                   <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">6:47 AM</p>
-                    <p>Good morning! ☀️</p>
+                    <p>PTM scheduled for Saturday 10am-1pm</p>
                   </div>
                   
                   <div className="bg-white rounded-lg p-2 text-xs max-w-[85%]">
                     <p className="text-gray-500">7:02 AM</p>
-                    <p>🌻 Suprabhat! 🌻</p>
+                    <p>📝 Math test on Chapter 5 next week</p>
                   </div>
                 </div>
               </div>
