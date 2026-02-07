@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-navy: #1E3A5F;
+    --calm-blue: #4A90A4;
+    --morning-gold: #E5A44C;
+    --dark-gray: #1A1A1A;
+    --medium-gray: #6B7280;
+    --light-gray: #F8F9FA;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-dark-gray bg-white;
+  }
+
+  /* Smooth scrolling for anchor links */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Primary Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           bg-brand-navy text-white font-semibold 
+           rounded-lg transition-all duration-200
+           hover:brightness-110 hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2
+           active:scale-[0.98];
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           bg-transparent text-brand-navy font-semibold 
+           border-2 border-brand-navy rounded-lg transition-all duration-200
+           hover:bg-brand-navy/10
+           focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply w-full max-w-7xl mx-auto px-6 lg:px-12;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-12 md:py-20 lg:py-24;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-sm 
+           transition-all duration-200
+           hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  /* Feature card */
+  .feature-card {
+    @apply bg-white rounded-xl p-6 
+           border border-gray-100
+           transition-all duration-200
+           hover:border-calm-blue/30 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-hero {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%);
+  }
+
+  .gradient-subtle {
+    background: linear-gradient(180deg, #F8F9FA 0%, #FFFFFF 100%);
+  }
+}
+
+@layer utilities {
+  /* Text balance for better headlines */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
