@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkoolCatch Marketing Website
+
+Marketing website for SkoolCatch — transforming WhatsApp school group chaos into calm morning briefings.
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Font:** Inter (Google Fonts)
+- **Hosting:** Vercel (recommended)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles + Tailwind
+│   ├── layout.tsx       # Root layout with SEO
+│   └── page.tsx         # Landing page
+├── components/
+│   ├── Navbar.tsx       # Sticky navigation
+│   ├── Hero.tsx         # Hero section with phone mockup
+│   ├── Problem.tsx      # WhatsApp chaos visualization
+│   ├── Solution.tsx     # App solution preview
+│   ├── Features.tsx     # 6 feature cards
+│   ├── HowItWorks.tsx   # 3-step process
+│   ├── Pricing.tsx      # Pricing plans
+│   ├── Testimonials.tsx # Reviews + stats
+│   ├── FAQ.tsx          # Accordion FAQ
+│   ├── FinalCTA.tsx     # Download CTA
+│   └── Footer.tsx       # Footer with links
+public/
+├── robots.txt
+├── sitemap.xml
+└── (add og-image.png, favicon.ico, etc.)
+```
 
-## Learn More
+## Brand Colors
 
-To learn more about Next.js, take a look at the following resources:
+| Name | Hex | Usage |
+|------|-----|-------|
+| Brand Navy | `#1E3A5F` | Primary, CTAs, headers |
+| Calm Blue | `#4A90A4` | Accents, links |
+| Morning Gold | `#E5A44C` | Highlights, badges |
+| Dark Gray | `#1A1A1A` | Body text |
+| Light Gray | `#F8F9FA` | Section backgrounds |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Vercel (Recommended)
 
-## Deploy on Vercel
+1. Connect your GitHub repo to Vercel
+2. Vercel auto-detects Next.js configuration
+3. Deploy automatically on push to `main`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Manual Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+# Deploy .next folder to your hosting provider
+```
+
+## SEO Checklist
+
+- [x] Meta title and description
+- [x] Open Graph tags
+- [x] Twitter cards
+- [x] robots.txt
+- [x] sitemap.xml
+- [ ] Add real og-image.png (1200x630)
+- [ ] Add real favicon.ico
+- [ ] Add apple-touch-icon.png
+
+## Performance Targets
+
+- Lighthouse Score: 90+ all categories
+- First Contentful Paint: < 1.5s
+- Largest Contentful Paint: < 2.5s
+- Bundle Size: < 100KB (JS)
+
+## Design Reference
+
+See design docs at: `~/.openclaw/workspace/skoolcatch/docs/marketing-site/`
+
+---
+
+Built with ☕ by Nexus | JAS-137
