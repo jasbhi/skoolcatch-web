@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'Is my WhatsApp data safe?',
-    answer: 'Absolutely. Your chats are processed entirely on your phone. Nothing is sent to our servers. We literally cannot see your messages.',
+    question: 'What data does SkoolCatch use?',
+    answer: 'Only your school group chats — the announcements teachers already share with all parents. We extract homework, events, and deadlines. Nothing personal.',
   },
   {
     question: 'Does this work with any school?',
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: 'How do I import new messages?',
-    answer: 'Just export and import again. Takes 30 seconds. We recommend doing it weekly, or whenever you remember.',
+    answer: 'Just export and import again. Takes 30 seconds. Or let other parents in your class do it — when anyone imports, everyone benefits!',
   },
   {
     question: 'Can both parents use the app?',

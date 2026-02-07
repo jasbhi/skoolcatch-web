@@ -15,9 +15,9 @@ const features = [
     description: 'Got 2 kids? 3? One briefing per child. Switch with a tap.',
   },
   {
-    emoji: '🔒',
-    title: '100% Private',
-    description: 'Your chats never leave your phone. We can\'t see them. Period.',
+    emoji: '🤝',
+    title: 'One Parent, All Benefit',
+    description: 'When one parent imports, everyone in the class gets the updates. Teamwork!',
   },
   {
     emoji: '🔔',
